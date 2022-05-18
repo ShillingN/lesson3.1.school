@@ -6,11 +6,12 @@ import pro.sky.hogwarts.school.data.Faculty;
 import pro.sky.hogwarts.school.data.Student;
 
 import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class SchoolApplication {
-	private static final ArrayList<Faculty> facultyArrayList = new ArrayList<>();
-	private static final ArrayList<Student> studentArrayList = new ArrayList<>();
+	private static final List<Faculty> facultyArrayList = new ArrayList<>();
+	private static final List<Student> studentArrayList = new ArrayList<>();
 
 	public static void main(String[] args) {
 		SpringApplication.run(SchoolApplication.class, args);
@@ -20,8 +21,6 @@ public class SchoolApplication {
 		facultyArrayList.add(new Faculty(3L, "slytherin", "green"));
 		System.out.println(facultyArrayList);
 
-//		final ArrayList<Student> studentArrayList;
-//		studentArrayList = new ArrayList<>();
 		studentArrayList.add(new Student(1L, "Laryn Petr", 16));
 		studentArrayList.add(new Student(2L, "Tanya Grotter", 18));
 		studentArrayList.add(new Student(3L, "Senya Doter", 34));

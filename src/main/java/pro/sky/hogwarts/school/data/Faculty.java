@@ -1,9 +1,9 @@
 package pro.sky.hogwarts.school.data;
 
 public class Faculty {
-    private final Long id;
-    private final String name;
-    private final String color;
+    private Long id;
+    private String name;
+    private String color;
 
     public Faculty(Long id, String name, String color) {
         this.id = id;
@@ -21,6 +21,18 @@ public class Faculty {
 
     public String getColor() {
         return color;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     @Override

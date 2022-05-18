@@ -3,7 +3,7 @@ package pro.sky.hogwarts.school.data;
 import java.util.Objects;
 
 public class Student {
-    private final Long id;
+    private Long id;
     private String name;
     private int age;
 
@@ -15,6 +15,10 @@ public class Student {
 
     public Long getId() {
         return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getName() {
