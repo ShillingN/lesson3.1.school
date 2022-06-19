@@ -1,14 +1,16 @@
 package pro.sky.hogwarts.school;
 
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import pro.sky.hogwarts.school.data.Faculty;
-import pro.sky.hogwarts.school.data.Student;
+import pro.sky.hogwarts.school.model.Faculty;
+import pro.sky.hogwarts.school.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootApplication
+@OpenAPIDefinition
 public class SchoolApplication {
 	private static final List<Faculty> facultyArrayList = new ArrayList<>();
 	private static final List<Student> studentArrayList = new ArrayList<>();

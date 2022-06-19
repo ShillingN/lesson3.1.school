@@ -1,4 +1,4 @@
-package pro.sky.hogwarts.school.data;
+package pro.sky.hogwarts.school.model;
 
 public class Faculty {
     private Long id;
